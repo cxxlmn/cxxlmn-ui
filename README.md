@@ -1,4 +1,27 @@
 # cxxlmn ui
-[source](https://raw.githubusercontent.com/cxxlmn/cxxlmn-ui/main/source) | [example](https://raw.githubusercontent.com/cxxlmn/cxxlmn-ui/main/example)
+# a cool ui library for roblox exploits
 
-![z](https://raw.githubusercontent.com/cxxlmn/cxxlmn-ui/main/lib.png)
+usage
+```csharp
+CreateWindow(<string> Name)
+   CreateToggle(<string> name, <function (bool)> callback)
+   CreateButton(<string> name, <function> callback)
+```
+
+
+example
+```lua
+local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/cxxlmn/cxxlmn-ui/main/source"))()
+local w = library:CreateWindow("Example Window")
+
+w:CreateButton("Example Button", function()
+    print("Working")
+end)
+
+w:CreateToggle("Example Toggle", function(bool)
+    print(bool)
+end)
+```
+
+
+![](https://raw.githubusercontent.com/cxxlmn/cxxlmn-ui/main/lib.png)
